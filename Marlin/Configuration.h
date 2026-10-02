@@ -713,9 +713,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp  14.11
+    #define DEFAULT_Ki   1.13
+    #define DEFAULT_Kd  43.94
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -1907,14 +1907,14 @@
 
 // The size of the printable area
 #define X_BED_SIZE 220
-#define Y_BED_SIZE 235
+#define Y_BED_SIZE 220
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS 3.50
+#define Y_MIN_POS -17.00
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define X_MAX_POS (X_BED_SIZE + X_MIN_POS)
+#define Y_MAX_POS (Y_BED_SIZE + Y_MIN_POS)
 #define Z_MAX_POS 250
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
