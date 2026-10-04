@@ -10,7 +10,7 @@ M204 P500.00 R1000.00 T500.00           ; Print/retract/travel acceleration
 M205 B20000.00 S0.00 T0.00 J0.08        ; Advanced motion / junction deviation
 ; M206 X0.00 Y0.00 Z0.00                  ; Home offsets (set in Configuration.h via MIN_POS), in config instead
 M420 S1 Z10.00                          ; Bed leveling on, fade height 10mm
-M145 S0 H170.00 B50.00 F255             ; Preheat PLA
+M145 S0 H190.00 B50.00 F255             ; Preheat PLA
 M145 S1 H240.00 B70.00 F255             ; Preheat ABS
 M301 P14.11 I1.13 D43.94                ; Hotend PID
 M851 X-27.00 Y-40.00 Z-3.2           ; Probe offsets
