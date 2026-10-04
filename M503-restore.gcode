@@ -13,7 +13,7 @@ M420 S1 Z10.00                          ; Bed leveling on, fade height 10mm
 M145 S0 H170.00 B50.00 F255             ; Preheat PLA
 M145 S1 H240.00 B70.00 F255             ; Preheat ABS
 M301 P14.11 I1.13 D43.94                ; Hotend PID
-M851 X-27.00 Y-40.00 Z-3.30            ; Probe offsets
+M851 X-27.00 Y-40.00 Z-3.12           ; Probe offsets
 M500                                    ; Save to EEPROM
 M503                                    ; Report settings to verify
 M117 Settings restored
